@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mocksaml Login</title>
+</head>
+<body>
+  <h2>Mocksaml ile Login</h2>
+
+  <form action="https://mocksaml.com/api/saml/sso/" method="POST">
+    <input type="hidden" name="SAMLRequest" value="BASE64_ENCODED_AUTHN_REQUEST" />
+    <!-- Optional: RelayState -->
+    <input type="hidden" name="RelayState" value="some-state-you-want-to-keep" />
+
+    <button type="submit">Giriş Yap</button>
+  </form>
+</body>
+</html>
